@@ -324,7 +324,8 @@ export default function Home() {
             </div>
           </div>
         </section>        
-        <section id="books" className="mt-24 py-24 text-center">
+        <section id="books" className="relative mt-24 py-24 text-center">
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent opacity-60" />
           <div className="mb-8">
             <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
               Reading Order
