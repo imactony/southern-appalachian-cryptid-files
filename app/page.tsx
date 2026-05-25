@@ -366,7 +366,7 @@ export default function Home() {
             ].map((book, index) => (
   <div
     key={book.title}
-    className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/60"
+    className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/60 transition duration-300 hover:-translate-y-1 hover:border-emerald-800/60 hover:bg-zinc-900"
   >
     <div className="relative mx-auto aspect-[2/3] w-44">
       <Image
