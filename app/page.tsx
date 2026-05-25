@@ -334,6 +334,7 @@ export default function Home() {
               {
   title: "Warden Division Case Reports — Volume I",
   label: "Book 0 / Archive Anthology",
+  metadata: "Recommended Starting Point • Classified Case Reports",
   image: "/covers/book-0.jpg",
   link: "https://www.amazon.com/dp/B0GLJDMPML",
   description:
@@ -342,6 +343,7 @@ export default function Home() {
 {
   title: "Shadows Over the Blue Ridge",
   label: "Book One",
+  metadata: "Book One • Main Investigation Begins",
   image: "/covers/book-1.jpg",
   link: "https://www.amazon.com/dp/B0GL8TGWRP",
   description:
@@ -350,6 +352,7 @@ export default function Home() {
 {
   title: "The Bridgewalker Files",
   label: "Book Two",
+  metadata: "Book Two • Thresholds and Crossings",
   image: "/covers/book-2.jpg",
   link: "https://www.amazon.com/dp/B0GLGX6G64",
   description:
@@ -358,6 +361,7 @@ export default function Home() {
 {
   title: "Ascension of Apex Theta",
   label: "Book Three",
+  metadata: "Book Three • Emergence Event",
   image: "/covers/book-3.jpg",
   link: "https://www.amazon.com/dp/B0GN8F3JWT",
   description:
@@ -366,14 +370,15 @@ export default function Home() {
             ].map((book, index) => (
   <div
     key={book.title}
-    className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/60 transition duration-300 hover:-translate-y-1 hover:border-emerald-800/60 hover:bg-zinc-900"
+      className="group overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/60 transition duration-300 hover:-translate-y-1 hover:border-emerald-800/60 hover:bg-zinc-900"
+
   >
     <div className="relative mx-auto aspect-[2/3] w-44">
       <Image
         src={book.image}
         alt={book.title}
         fill
-        className="object-cover"
+        className="object-cover transition duration-500 group-hover:scale-105"
       />
     </div>
 
@@ -385,6 +390,10 @@ export default function Home() {
       <h3 className="mt-3 text-2xl font-black">
         {book.title}
       </h3>
+
+<p className="mt-2 text-sm font-semibold text-zinc-500">
+  {book.metadata}
+</p>
 
       <p className="mt-4 min-h-[7rem] leading-7 text-zinc-300">
         {book.description}
@@ -401,6 +410,129 @@ export default function Home() {
     </div>
   </div>
 ))}
+<section
+  id="world"
+  className="relative mt-24 overflow-hidden rounded-[2rem] border border-zinc-800 bg-zinc-950"
+>
+  <div
+    className="absolute inset-0 opacity-20"
+    style={{
+      backgroundImage: "url('/images/AppMtnsBridge1.png')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  />
+
+  <div className="relative z-10 mx-auto max-w-5xl px-6 py-24">
+    <p className="text-sm uppercase tracking-[0.35em] text-emerald-300">
+      The World of the Files
+    </p>
+
+    <h2 className="mt-6 max-w-4xl text-4xl font-black tracking-tight text-white md:text-3xl">
+      Some places in Appalachia were never meant to be found.
+    </h2>
+
+    <div className="mt-10 space-y-8 text-lg leading-8 text-zinc-300">
+      <p>
+        Across the mountains of Western North Carolina, Eastern Tennessee,
+        and Southwestern Virginia, strange disappearances, impossible creatures,
+        and forgotten folklore are quietly documented by an organization few
+        people know exists.
+      </p>
+
+      <p>
+        The Warden Division monitors unexplained incidents hidden deep within
+        the Appalachian wilderness — abandoned roads, isolated hollows,
+        forgotten fire towers, and places where reality itself appears unstable.
+      </p>
+
+      <p>
+        Most reports are buried. Some are sealed permanently.
+        A few escaped into the archive.
+      </p>
+    </div>
+  </div>
+</section>
+<section className="mt-24">
+  <div className="mb-8">
+    <p className="text-sm uppercase tracking-[0.35em] text-emerald-300">
+      Restricted Archive
+    </p>
+
+    <h2 className="mt-3 text-4xl font-black tracking-tight text-white md:text-3xl">
+      Recovered Warden Division records
+    </h2>
+
+    <p className="mt-5 max-w-3xl leading-8 text-zinc-300">
+      The following fragments were recovered from sealed regional files. Most
+      records remain incomplete, corrupted, or redacted under active containment
+      protocols.
+    </p>
+  </div>
+
+  <div className="grid gap-6 md:grid-cols-3">
+    {[
+      {
+        file: "WRD-014",
+        title: "Black Lantern Signal",
+        location: "Pisgah Sector",
+        status: "Active Monitoring",
+        threat: "Red",
+        summary:
+          "Unidentified lantern lights appear along abandoned mountain roads during dense fog events. Witnesses report hearing familiar voices calling from beyond the tree line.",
+      },
+      {
+        file: "WRD-027",
+        title: "Bridgewalker Phenomenon",
+        location: "French Broad Watershed",
+        status: "Under Review",
+        threat: "Amber",
+        summary:
+          "Sightings cluster near old bridges, flood markers, and isolated crossings where travelers report impossible distances and missing time.",
+      },
+      {
+        file: "WRD-042",
+        title: "Apex Theta Fragment",
+        location: "Blue Ridge Corridor",
+        status: "Sealed",
+        threat: "Black",
+        summary:
+          "Partial records reference atmospheric distortion, overlapping entity signatures, and a containment failure buried within the Appalachian highlands.",
+      },
+    ].map((record) => (
+      <div
+        key={record.file}
+        className="rounded-3xl border border-zinc-800 bg-black/30 p-6 transition duration-300 hover:border-emerald-800/60 hover:bg-zinc-900/70"
+      >
+        <div className="flex items-center justify-between gap-4">
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-emerald-300">
+            {record.file}
+          </p>
+
+          <span className="rounded-full border border-zinc-700 px-3 py-1 text-xs text-zinc-400">
+            {record.threat}
+          </span>
+        </div>
+
+        <h3 className="mt-4 text-2xl font-black text-white">
+          {record.title}
+        </h3>
+
+        <p className="mt-2 font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">
+          {record.location} • {record.status}
+        </p>
+
+        <p className="mt-5 leading-7 text-zinc-300">
+          {record.summary}
+        </p>
+
+        <p className="mt-6 font-mono text-xs uppercase tracking-[0.25em] text-red-300">
+          Access Partially Redacted
+        </p>
+      </div>
+    ))}
+  </div>
+</section>
           </div>
         </section>      <section
         id="contact"
