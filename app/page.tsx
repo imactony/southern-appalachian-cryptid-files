@@ -668,7 +668,7 @@ You may unsubscribe at any time.
 
     <div className="mt-12 border-t border-zinc-800 pt-6 text-sm text-zinc-400">
       © 2026 Hollow Ridge Press. The Southern Appalachian Cryptid Files and all associated content are protected under U.S. copyright law.
-    </div>p
+    </div>
   </div>
 </footer>
     </main>
