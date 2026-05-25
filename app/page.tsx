@@ -478,7 +478,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
       Recovered Warden Division records
     </h2>
 
-    <p className="mt-5 max-w-3xl leading-8 text-zinc-300">
+    <p className="mx-auto mt-5 max-w-3xl leading-8 text-zinc-300">
       The following fragments were recovered from sealed regional files. Most
       records remain incomplete, corrupted, or redacted under active containment
       protocols.
