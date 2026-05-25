@@ -333,19 +333,23 @@ export default function Home() {
                         {[
               {
                 title: "Warden Division Case Reports — Volume I",
-                image: "/covers/book-0.jpg",
+                image: "/covers/book-0.jpg",  
+                link: "https://www.amazon.com/dp/B0GLJDMPML",
               },
               {
                 title: "Shadows Over the Blue Ridge",
                 image: "/covers/book-1.jpg",
+                link: "https://www.amazon.com/dp/B0GL8TGWRP",
               },
               {
                 title: "The Bridgewalker Files",
                 image: "/covers/book-2.jpg",
+                link: "https://www.amazon.com/dp/B0GLGX6G64",
               },
               {
                 title: "Ascension of Apex Theta",
                 image: "/covers/book-3.jpg",
+                link: "https://www.amazon.com/dp/B0GN8F3JWT",
               },
             ].map((book, index) => (
               <div
@@ -370,9 +374,14 @@ export default function Home() {
                     {book.title}
                   </h3>
 
-                  <button className="mt-6 rounded-2xl border border-zinc-700 px-5 py-3 font-semibold hover:bg-zinc-800">
-                    Learn More
-                  </button>
+                  <a
+  href={book.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  className="mt-6 inline-block rounded-2xl border border-zinc-700 px-5 py-3 font-semibold transition hover:bg-zinc-800"
+>
+  View on Amazon
+</a>
                 </div>
               </div>
             ))}
