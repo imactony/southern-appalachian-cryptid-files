@@ -332,59 +332,75 @@ export default function Home() {
           <div className="grid gap-6 md:grid-cols-2">
                         {[
               {
-                title: "Warden Division Case Reports — Volume I",
-                image: "/covers/book-0.jpg",  
-                link: "https://www.amazon.com/dp/B0GLJDMPML",
-              },
-              {
-                title: "Shadows Over the Blue Ridge",
-                image: "/covers/book-1.jpg",
-                link: "https://www.amazon.com/dp/B0GL8TGWRP",
-              },
-              {
-                title: "The Bridgewalker Files",
-                image: "/covers/book-2.jpg",
-                link: "https://www.amazon.com/dp/B0GLGX6G64",
-              },
-              {
-                title: "Ascension of Apex Theta",
-                image: "/covers/book-3.jpg",
-                link: "https://www.amazon.com/dp/B0GN8F3JWT",
-              },
+  title: "Warden Division Case Reports — Volume I",
+  label: "Book 0 / Archive Anthology",
+  image: "/covers/book-0.jpg",
+  link: "https://www.amazon.com/dp/B0GLJDMPML",
+  description:
+    "A classified collection of Warden Division case reports documenting the strange, dangerous, and unexplained things moving through Southern Appalachia.",
+},
+{
+  title: "Shadows Over the Blue Ridge",
+  label: "Book One",
+  image: "/covers/book-1.jpg",
+  link: "https://www.amazon.com/dp/B0GL8TGWRP",
+  description:
+    "When old mountain stories begin turning into real disappearances, the hidden files of the Warden Division reveal something watching from the fog.",
+},
+{
+  title: "The Bridgewalker Files",
+  label: "Book Two",
+  image: "/covers/book-2.jpg",
+  link: "https://www.amazon.com/dp/B0GLGX6G64",
+  description:
+    "Bridges, crossings, and forgotten roads become thresholds as the investigation moves deeper into the haunted geography of Appalachia.",
+},
+{
+  title: "Ascension of Apex Theta",
+  label: "Book Three",
+  image: "/covers/book-3.jpg",
+  link: "https://www.amazon.com/dp/B0GN8F3JWT",
+  description:
+    "The archive begins to unravel as separate cases converge toward an emergence event buried in the mountains and hidden in sealed records.",
+},
             ].map((book, index) => (
-              <div
-                key={book.title}
-                className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/60"
-              >
-                <div className="relative mx-auto aspect-[2/3] w-44">
-                  <Image
-                    src={book.image}
-                    alt={book.title}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
+  <div
+    key={book.title}
+    className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/60"
+  >
+    <div className="relative mx-auto aspect-[2/3] w-44">
+      <Image
+        src={book.image}
+        alt={book.title}
+        fill
+        className="object-cover"
+      />
+    </div>
 
-                <div className="p-6">
-                  <p className="font-mono text-xs uppercase tracking-[0.25em] text-emerald-300">
-                    Book {index}
-                  </p>
+    <div className="p-6">
+      <p className="font-mono text-xs uppercase tracking-[0.25em] text-emerald-300">
+        {book.label}
+      </p>
 
-                  <h3 className="mt-3 text-2xl font-black">
-                    {book.title}
-                  </h3>
+      <h3 className="mt-3 text-2xl font-black">
+        {book.title}
+      </h3>
 
-                  <a
-  href={book.link}
-  target="_blank"
-  rel="noopener noreferrer"
-  className="mt-6 inline-block rounded-2xl border border-zinc-700 px-5 py-3 font-semibold transition hover:bg-zinc-800"
->
-  View on Amazon
-</a>
-                </div>
-              </div>
-            ))}
+      <p className="mt-4 min-h-[7rem] leading-7 text-zinc-300">
+        {book.description}
+      </p>
+
+      <a
+        href={book.link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mt-6 inline-block rounded-2xl border border-zinc-700 px-5 py-3 font-semibold transition hover:bg-zinc-800"
+      >
+        Read on Amazon
+      </a>
+    </div>
+  </div>
+))}
           </div>
         </section>      <section
         id="contact"
