@@ -543,6 +543,8 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
 
         <p className="mt-6 font-mono text-xs uppercase tracking-[0.25em] text-red-300">
           Access Partially Redacted
+          <br />
+          Case Under Executive Review
         </p>
       </div>
     ))}
