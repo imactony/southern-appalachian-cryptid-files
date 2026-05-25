@@ -403,16 +403,26 @@ export default function Home() {
           release announcements from Hollow Ridge Press.
         </p>
 
-        <div className="mx-auto mt-8 flex max-w-xl flex-col gap-3 sm:flex-row">
-          <input
-            placeholder="Email address"
-            className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900 px-5 py-4 text-zinc-100"
-          />
+        <form
+  action="https://formspree.io/f/xjgzakzz"
+  method="POST"
+  className="mx-auto mt-8 flex max-w-xl flex-col gap-3 sm:flex-row"
+>
+  <input
+    type="email"
+    name="email"
+    required
+    placeholder="Email address"
+    className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900 px-5 py-4 text-zinc-100"
+  />
 
-          <button className="rounded-2xl bg-emerald-500 px-6 py-4 font-semibold text-zinc-950 hover:bg-emerald-400">
-            Subscribe
-          </button>
-        </div>
+  <button
+    type="submit"
+    className="rounded-2xl bg-emerald-500 px-6 py-4 font-semibold text-zinc-950 hover:bg-emerald-400"
+  >
+    Subscribe
+  </button>
+</form>
       </section>
     <footer className="mt-24 border-t border-zinc-800 bg-black/40">
   <div className="mx-auto max-w-7xl px-6 py-12">
