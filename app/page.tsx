@@ -579,7 +579,13 @@ export default function Home() {
   >
     Subscribe
   </button>
-</form>
+  </form>
+  <p className="mt-4 text-sm leading-6 text-zinc-500 text-center">
+  By subscribing, you agree to receive occasional updates, release
+  announcements, and recovered transmissions from Hollow Ridge Press.
+  Your information will never be sold or shared, and you may unsubscribe
+  at any time.
+</p>
       </section>
     <footer className="mt-16 border-t border-zinc-800 bg-black/40">
   <div className="mx-auto max-w-7xl px-6 py-12">
