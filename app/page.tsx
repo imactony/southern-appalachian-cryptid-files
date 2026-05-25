@@ -583,11 +583,13 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
     Subscribe
   </button>
   </form>
-  <p className="mt-4 text-sm leading-6 text-zinc-400 text-center">
-  By subscribing, you agree to receive occasional updates, release
-  announcements, and recovered transmissions from Hollow Ridge Press.
-  Your information will never be sold or shared, and you may unsubscribe
-  at any time.
+  <p className="mt-4 text-sm leading-6 text-zinc-500">
+  By subscribing, you agree to receive occasional updates,
+  release announcements, and recovered transmissions from
+  Hollow Ridge Press.
+  <br />
+  Your information will never be sold or shared, and you may
+  unsubscribe at any time.
 </p>
       </section>
     <footer className="mt-16 border-t border-zinc-800 bg-black/40">
