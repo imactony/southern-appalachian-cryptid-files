@@ -41,13 +41,6 @@ export default function PrivacyPage() {
           Press through the website contact form.
         </p>
 
-<a
-  href="/terms"
-  className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300"
->
-  Terms & Disclaimer
-</a>
-
         <p className="mt-6 leading-8 text-zinc-300">
   Hollow Ridge Press is committed to maintaining an accessible experience
   for all visitors. If you encounter accessibility issues while using this

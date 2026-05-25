@@ -647,6 +647,13 @@ You may unsubscribe at any time.
 >
   Privacy Policy
 </a>
+
+<a
+  href="/terms"
+  className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300"
+>
+  Terms & Disclaimer
+</a>
         </div>
       </div>
 
