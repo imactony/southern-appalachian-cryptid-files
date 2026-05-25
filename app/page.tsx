@@ -478,7 +478,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
       Recovered Warden Division records
     </h2>
 
-    <p className="mx-auto mt-5 max-w-3xl leading-8 text-zinc-300">
+    <p className="mx-auto git add .mt-5 max-w-3xl leading-8 text-zinc-300">
       The following fragments were recovered from sealed regional files. Most
       records remain incomplete, corrupted, or redacted under active containment
       protocols.
@@ -665,7 +665,11 @@ You may unsubscribe at any time.
         </p>
       </div>
     </div>
-
+<p className="mt-6 text-xs leading-6 text-zinc-400">
+  The Southern Appalachian Cryptid Files is a work of fiction. Any resemblance
+  to actual persons, organizations, events, or paranormal investigations is
+  purely coincidental.
+</p>
     <div className="mt-12 border-t border-zinc-800 pt-6 text-sm text-zinc-400">
       © 2026 Hollow Ridge Press. The Southern Appalachian Cryptid Files and all associated content are protected under U.S. copyright law.
     </div>
