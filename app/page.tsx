@@ -1,10 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { Mountain, Radio, Shield, ChevronRight } from "lucide-react";
 
 export default function Home() {
+  const shouldReduceMotion = useReducedMotion();
+
   return (
     <main className="min-h-screen bg-zinc-950 text-zinc-100">
             <header className="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/90 backdrop-blur">
@@ -49,9 +51,9 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
         <motion.div
           className="relative z-10 mx-auto max-w-7xl px-6 py-40"
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
+initial={shouldReduceMotion ? false : { opacity: 0, y: 16 }}
+animate={{ opacity: 1, y: 0 }}
+transition={{ duration: shouldReduceMotion ? 0 : 0.7 }}
         >
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-800 bg-emerald-950/40 px-4 py-2 text-sm text-emerald-200">
             <Radio aria-hidden="true" className="h-4 w-4" />
@@ -138,6 +140,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
 
               <a
   href="#archive"
+  aria-label="Open Black Lantern Signal case file"
   className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-300"
 >
   Open case file <ChevronRight aria-hidden="true" className="ml-1 h-4 w-4" />
@@ -164,6 +167,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
 
               <a
   href="#archive"
+  aria-label="Open The Bridgewalker Files case file"
   className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-300"
 >
   Open case file <ChevronRight aria-hidden="true" className="ml-1 h-4 w-4" />
@@ -407,14 +411,15 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
         {book.description}
       </p>
 
-      <a
-        href={book.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="mt-6 inline-block rounded-2xl border border-zinc-700 px-5 py-3 font-semibold transition hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-emerald-300"
-      >
-        Read on Amazon
-      </a>
+<a
+  href={book.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={`Read ${book.title} on Amazon`}
+  className="mt-6 inline-block rounded-2xl border border-zinc-700 px-5 py-3 font-semibold transition hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-emerald-300"
+>
+  Read on Amazon
+</a>
     </div>
   </div>
 ))}
@@ -590,8 +595,10 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
   release announcements, and recovered transmissions from
   Hollow Ridge Press.
   <br />
-  Your information will never be sold or shared, and you may
-  unsubscribe at any time.
+Your email will be used only for this mailing list, processed through our form
+provider, and will not be sold. 
+<br />
+You may unsubscribe at any time.
 </p>
       </section>
     <footer className="mt-16 border-t border-zinc-800 bg-black/40">
@@ -618,9 +625,9 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
         </p>
 
         <div className="mt-4 flex flex-col gap-3 text-zinc-300">
-          <a href="#archive" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
-            Case Files
-          </a>
+          <a href="#case-files" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
+  Case Files
+</a>
 
           <a href="#warden" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
             Warden Division
