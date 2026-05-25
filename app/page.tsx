@@ -143,7 +143,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
   aria-label="Open Black Lantern Signal case file"
   className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-300"
 >
-  Open case file <ChevronRight aria-hidden="true" className="ml-1 h-4 w-4" />
+  Open Recovered File Fragment <ChevronRight aria-hidden="true" className="ml-1 h-4 w-4" />
 </a>
             </div>
 
@@ -170,7 +170,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
   aria-label="Open The Bridgewalker Files case file"
   className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-300"
 >
-  Open case file <ChevronRight aria-hidden="true" className="ml-1 h-4 w-4" />
+  Open Recovered File Fragment <ChevronRight aria-hidden="true" className="ml-1 h-4 w-4" />
 </a>
             </div>
           </div>
