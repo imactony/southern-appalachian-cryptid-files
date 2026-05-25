@@ -20,15 +20,26 @@ export default function Home() {
           </div>
 
           <nav className="hidden gap-6 text-sm text-zinc-300 md:flex">
-            <a href="#" className="hover:text-emerald-300">Archive</a>
-            <a href="#" className="hover:text-emerald-300">Warden Division</a>
-            <a href="#" className="hover:text-emerald-300">Books</a>
-            <a href="#" className="hover:text-emerald-300">Contact</a>
-          </nav>
+  <a href="#archive" className="hover:text-emerald-300">
+    Archive
+  </a>
+
+  <a href="#world" className="hover:text-emerald-300">
+    World
+  </a>
+
+  <a href="#books" className="hover:text-emerald-300">
+    Books
+  </a>
+
+  <a href="#contact" className="hover:text-emerald-300">
+    Contact
+  </a>
+</nav>
         </div>
       </header>
             <section
-        className="relative overflow-hidden border-b border-zinc-800"
+        className="relative overflow-hidden border-b border-zinc-800 py-24"
         style={{
           backgroundImage: "url('/images/AppMtnsTower1.png')",
           backgroundSize: "cover",
@@ -101,15 +112,15 @@ export default function Home() {
         </div>
       </section>        <section id="archives" className="mt-20">
           <div className="mb-8">
-            <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
+            <p className="text-sm uppercase tracking-[0.3em] text-emerald-300 text-center">
               Case File Archive
             </p>
 
-            <h2 className="mt-2 text-4xl font-black">
+            <h2 className="mt-2 text-4xl font-black text-center">
               Recovered investigation records
             </h2>
 
-            <p className="mt-4 max-w-3xl leading-8 text-zinc-300">
+            <p className="mx-auto mt-4 max-w-3xl leading-8 text-zinc-300 text-center">
               The following files remain accessible despite repeated deletion
               attempts by the Warden Division archive system.
             </p>
@@ -238,8 +249,8 @@ export default function Home() {
                   New Recruit Orientation
                 </div>
 
-                <h2 className="mt-6 text-5xl font-black leading-tight">
-                  Welcome to the Warden Division archive.
+                <h2 className="mt-6 text-3xl font-black leading-tight text-center">
+                  Welcome to the Warden Division archive
                 </h2>
 
                 <p className="mt-6 leading-8 text-zinc-300">
@@ -312,7 +323,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </section>        <section id="books"className="mt-20">
+        </section>        
+        <section id="books" className="mt-24 py-24 text-center">
           <div className="mb-8">
             <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
               Reading Order
@@ -322,7 +334,7 @@ export default function Home() {
               The Southern Appalachian Cryptid Files
             </h2>
 
-            <p className="mt-4 max-w-3xl leading-8 text-zinc-300">
+            <p className="mx-auto mt-4 max-w-3xl leading-8 text-zinc-300 text-center">
               Begin with the Warden Division archive, then follow the full novel
               sequence as the investigation expands from isolated sightings to a
               larger Appalachian mythology.
@@ -410,9 +422,8 @@ export default function Home() {
     </div>
   </div>
 ))}
-<section
-  id="world"
-  className="relative mt-24 overflow-hidden rounded-[2rem] border border-zinc-800 bg-zinc-950"
+<section id="world"
+  className="relative mt-24 overflow-hidden rounded-[2rem] border border-zinc-800 bg-zinc-950 py-24 text-center"
 >
   <div
     className="absolute inset-0 opacity-20"
@@ -453,9 +464,9 @@ export default function Home() {
     </div>
   </div>
 </section>
-<section className="mt-24">
+<section id="archive" className="mt-24 py-24 text-center">
   <div className="mb-8">
-    <p className="text-sm uppercase tracking-[0.35em] text-emerald-300">
+    <p className="text-sm uppercase tracking-[0.35em] text-emerald-300 text-center">
       Restricted Archive
     </p>
 
@@ -534,9 +545,9 @@ export default function Home() {
   </div>
 </section>
           </div>
-        </section>      <section
-        id="contact"
-        className="mt-20 border-t border-zinc-800 py-16 text-center"
+        </section>      
+        <section id="contact"
+        className="mt-20 border-t border-zinc-800 py-24 text-center"
       >
         <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
           Contact the Archive
