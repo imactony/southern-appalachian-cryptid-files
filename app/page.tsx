@@ -20,19 +20,19 @@ export default function Home() {
           </div>
 
           <nav className="hidden gap-6 text-sm text-zinc-300 md:flex">
-  <a href="#archive" className="hover:text-emerald-300">
+  <a href="#archive" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
     Archive
   </a>
 
-  <a href="#world" className="hover:text-emerald-300">
+  <a href="#world" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
     World
   </a>
 
-  <a href="#books" className="hover:text-emerald-300">
+  <a href="#books" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
     Books
   </a>
 
-  <a href="#contact" className="hover:text-emerald-300">
+  <a href="#contact" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
     Contact
   </a>
 </nav>
@@ -138,7 +138,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
 
               <a
   href="#archive"
-  className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200"
+  className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-300"
 >
   Open case file <ChevronRight aria-hidden="true" className="ml-1 h-4 w-4" />
 </a>
@@ -164,7 +164,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
 
               <a
   href="#archive"
-  className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200"
+  className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200 focus:outline-none focus:ring-2 focus:ring-emerald-300"
 >
   Open case file <ChevronRight aria-hidden="true" className="ml-1 h-4 w-4" />
 </a>
@@ -418,6 +418,9 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
     </div>
   </div>
 ))}
+          </div>
+        </section>
+
 <section id="world"
   className="relative mt-16 overflow-hidden rounded-[2rem] border border-zinc-800 bg-zinc-950 py-16 text-center"
 >
@@ -540,8 +543,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
     ))}
   </div>
 </section>
-          </div>
-        </section>      
+   
         <section id="contact"
         className="mt-20 border-t border-zinc-800 py-16 text-center"
       >
@@ -573,17 +575,17 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
     name="email"
     required
     placeholder="Email address"
-    className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900 px-5 py-4 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-emerald-400"
+    className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900 px-5 py-4 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-emerald-300"
   />
 
   <button
     type="submit"
-    className="rounded-2xl bg-emerald-500 px-6 py-4 font-semibold text-zinc-950 hover:bg-emerald-400"
+    className="rounded-2xl bg-emerald-500 px-6 py-4 font-semibold text-zinc-950 hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300"
   >
     Subscribe
   </button>
-  </form>
-  <p className="mt-4 text-sm leading-6 text-zinc-500">
+</form>
+  <p className="mt-4 text-sm leading-6 text-zinc-400">
   By subscribing, you agree to receive occasional updates,
   release announcements, and recovered transmissions from
   Hollow Ridge Press.
@@ -616,19 +618,19 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
         </p>
 
         <div className="mt-4 flex flex-col gap-3 text-zinc-300">
-          <a href="#archive" className="hover:text-emerald-300">
+          <a href="#archive" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
             Case Files
           </a>
 
-          <a href="#warden" className="hover:text-emerald-300">
+          <a href="#warden" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
             Warden Division
           </a>
 
-          <a href="#books" className="hover:text-emerald-300">
+          <a href="#books" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
             Books
           </a>
 
-          <a href="#contact" className="hover:text-emerald-300">
+          <a href="#contact" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
             Contact
           </a>
         </div>
