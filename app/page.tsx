@@ -414,6 +414,68 @@ export default function Home() {
           </button>
         </div>
       </section>
-    </main>
+    <footer className="mt-24 border-t border-zinc-800 bg-black/40">
+  <div className="mx-auto max-w-7xl px-6 py-12">
+    <div className="grid gap-10 md:grid-cols-3">
+      <div>
+        <p className="text-xs uppercase tracking-[0.3em] text-emerald-300">
+          Hollow Ridge Press
+        </p>
+
+        <h3 className="mt-3 text-2xl font-black">
+          Southern Appalachian Cryptid Files
+        </h3>
+
+        <p className="mt-4 leading-7 text-zinc-400">
+          Appalachian folk horror, recovered archives, paranormal investigations,
+          and the hidden things waiting beyond the fog.
+        </p>
+      </div>
+
+      <div>
+        <p className="text-xs uppercase tracking-[0.3em] text-emerald-300">
+          Archive Navigation
+        </p>
+
+        <div className="mt-4 flex flex-col gap-3 text-zinc-300">
+          <a href="#archive" className="hover:text-emerald-300">
+            Case Files
+          </a>
+
+          <a href="#warden" className="hover:text-emerald-300">
+            Warden Division
+          </a>
+
+          <a href="#books" className="hover:text-emerald-300">
+            Books
+          </a>
+
+          <a href="#contact" className="hover:text-emerald-300">
+            Contact
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <p className="text-xs uppercase tracking-[0.3em] text-emerald-300">
+          Author
+        </p>
+
+        <p className="mt-4 leading-7 text-zinc-400">
+          Written by J. Anthoney
+        </p>
+
+        <p className="mt-2 leading-7 text-zinc-500">
+          Tales from the mountains of Southwestern Virginia, Eastern Tennessee,
+          and Western North Carolina.
+        </p>
+      </div>
+    </div>
+
+    <div className="mt-12 border-t border-zinc-800 pt-6 text-sm text-zinc-500">
+      © 2026 Hollow Ridge Press. All Rights Reserved.
+    </div>
+  </div>
+</footer>
   );
 }
