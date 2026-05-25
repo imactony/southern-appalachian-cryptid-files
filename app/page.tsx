@@ -578,6 +578,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
     id="email"
     type="email"
     name="email"
+    autoComplete="email"
     required
     placeholder="Email address"
     className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900 px-5 py-4 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-emerald-300"
@@ -590,7 +591,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
     Subscribe
   </button>
 </form>
-  <p className="mt-4 text-sm leading-6 text-zinc-400">
+  <p aria-describedby="email-privacy-notice" className="mt-4 text-sm leading-6 text-zinc-400">
   By subscribing, you agree to receive occasional updates,
   release announcements, and recovered transmissions from
   Hollow Ridge Press.
