@@ -153,9 +153,12 @@ export default function Home() {
                 terrain.
               </p>
 
-              <button className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200">
-                Open case file <ChevronRight className="ml-1 h-4 w-4" />
-              </button>
+              <a
+  href="#archive"
+  className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200"
+>
+  Open case file <ChevronRight className="ml-1 h-4 w-4" />
+</a>
             </div>
 
             <div className="rounded-3xl border border-zinc-800 bg-zinc-900/60 p-6">
@@ -176,9 +179,12 @@ export default function Home() {
                 crossings throughout the Southern Appalachian corridor.
               </p>
 
-              <button className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200">
-                Open case file <ChevronRight className="ml-1 h-4 w-4" />
-              </button>
+              <a
+  href="#archive"
+  className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200"
+>
+  Open case file <ChevronRight className="ml-1 h-4 w-4" />
+</a>
             </div>
           </div>
         </section>        <section id="warden" className="mt-20">
