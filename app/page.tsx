@@ -10,7 +10,7 @@ export default function Home() {
             <header className="sticky top-0 z-50 border-b border-zinc-800 bg-zinc-950/90 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
           <div className="flex items-center gap-3">
-            <Mountain className="h-6 w-6 text-emerald-300" />
+            <Mountain aria-hidden="true" className="h-6 w-6 text-emerald-300" />
             <div>
               <p className="text-xs uppercase tracking-[0.3em] text-emerald-300">
                 Hollow Ridge Press
@@ -54,13 +54,13 @@ export default function Home() {
           transition={{ duration: 0.7 }}
         >
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-emerald-800 bg-emerald-950/40 px-4 py-2 text-sm text-emerald-200">
-            <Radio className="h-4 w-4" />
+            <Radio aria-hidden="true" className="h-4 w-4" />
             Signal acquired: Blue Ridge monitoring network
           </div>
 
           <div className="mb-8 flex items-center gap-3">
             <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-emerald-700 bg-zinc-900">
-              <Mountain className="h-6 w-6 text-emerald-300" />
+              <Mountain aria-hidden="true" className="h-6 w-6 text-emerald-300" />
             </div>
             <div>
               <p className="text-base uppercase tracking-[0.3em] text-emerald-300">
@@ -87,21 +87,19 @@ export default function Home() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
   <a
     href="#archive"
-    className="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-6 py-4 font-semibold text-zinc-950 hover:bg-emerald-400"
-  >
-    Explore the Archive <ChevronRight className="ml-2 h-4 w-4" />
+className="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-6 py-4 font-semibold text-zinc-950 hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300"  >
+    Explore the Archive <ChevronRight aria-hidden="true" className="ml-2 h-4 w-4" />
   </a>
 
   <a
     href="#books"
-    className="inline-flex items-center justify-center rounded-2xl border border-zinc-700 bg-zinc-900 px-6 py-4 font-semibold text-zinc-100 hover:bg-zinc-800"
-  >
+className="inline-flex items-center justify-center rounded-2xl border border-zinc-700 bg-zinc-900 px-6 py-4 font-semibold text-zinc-100 hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-emerald-300"  >
     View the Books
   </a>
 </div>
         </motion.div>
 
-      </section>        <section id="archives" className="mt-20">
+      </section>        <section id="case-files" className="mt-20">
           <div className="mb-8">
             <p className="text-sm uppercase tracking-[0.3em] text-emerald-300 text-center">
               Case File Archive
@@ -142,7 +140,7 @@ export default function Home() {
   href="#archive"
   className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200"
 >
-  Open case file <ChevronRight className="ml-1 h-4 w-4" />
+  Open case file <ChevronRight aria-hidden="true" className="ml-1 h-4 w-4" />
 </a>
             </div>
 
@@ -168,7 +166,7 @@ export default function Home() {
   href="#archive"
   className="mt-6 inline-flex items-center text-sm font-semibold text-emerald-300 hover:text-emerald-200"
 >
-  Open case file <ChevronRight className="ml-1 h-4 w-4" />
+  Open case file <ChevronRight aria-hidden="true" className="ml-1 h-4 w-4" />
 </a>
             </div>
           </div>
@@ -184,9 +182,9 @@ export default function Home() {
               <div className="border-b border-zinc-800 bg-zinc-950/70 p-8 lg:border-b-0 lg:border-r">
                 <div className="flex aspect-square items-center justify-center rounded-3xl border border-zinc-800 bg-black/40 text-center">
                   <div>
-                    <Shield className="mx-auto mb-5 h-14 w-14 text-emerald-300" />
+                    <Shield aria-hidden="true" className="mx-auto mb-5 h-14 w-14 text-emerald-300" />
 
-                    <p className="font-mono text-xs uppercase tracking-[0.3em] text-zinc-500">
+                    <p className="font-mono text-xs uppercase tracking-[0.3em] text-zinc-400">
                       Subject File
                     </p>
 
@@ -242,7 +240,7 @@ export default function Home() {
             <div className="grid gap-0 lg:grid-cols-[0.42fr_0.58fr]">
               <div className="border-b border-zinc-800 bg-black/40 p-8 lg:border-b-0 lg:border-r lg:p-10">
                 <div className="inline-flex items-center gap-2 rounded-full border border-emerald-800/60 bg-emerald-950/30 px-4 py-2 font-mono text-xs uppercase tracking-[0.25em] text-emerald-300">
-                  <Radio className="h-3 w-3" />
+                  <Radio aria-hidden="true" className="h-3 w-3" />
                   New Recruit Orientation
                 </div>
 
@@ -386,7 +384,7 @@ export default function Home() {
     <div className="relative mx-auto aspect-[2/3] w-44">
       <Image
         src={book.image}
-        alt={book.title}
+        alt={`${book.title} book cover`}
         fill
         className="object-cover transition duration-500 group-hover:scale-105"
       />
@@ -401,7 +399,7 @@ export default function Home() {
         {book.title}
       </h3>
 
-<p className="mt-2 text-sm font-semibold text-zinc-500">
+<p className="mt-2 text-sm font-semibold text-zinc-400">
   {book.metadata}
 </p>
 
@@ -413,7 +411,7 @@ export default function Home() {
         href={book.link}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-6 inline-block rounded-2xl border border-zinc-700 px-5 py-3 font-semibold transition hover:bg-zinc-800"
+        className="mt-6 inline-block rounded-2xl border border-zinc-700 px-5 py-3 font-semibold transition hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-emerald-300"
       >
         Read on Amazon
       </a>
@@ -527,7 +525,7 @@ export default function Home() {
           {record.title}
         </h3>
 
-        <p className="mt-2 font-mono text-xs uppercase tracking-[0.2em] text-zinc-500">
+        <p className="mt-2 font-mono text-xs uppercase tracking-[0.2em] text-zinc-400">
           {record.location} • {record.status}
         </p>
 
@@ -565,12 +563,17 @@ export default function Home() {
   method="POST"
   className="mx-auto mt-8 flex max-w-xl flex-col gap-3 sm:flex-row"
 >
+  <label htmlFor="email" className="sr-only">
+    Email address
+  </label>
+
   <input
+    id="email"
     type="email"
     name="email"
     required
     placeholder="Email address"
-    className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900 px-5 py-4 text-zinc-100"
+    className="flex-1 rounded-2xl border border-zinc-800 bg-zinc-900 px-5 py-4 text-zinc-100 focus:outline-none focus:ring-2 focus:ring-emerald-400"
   />
 
   <button
@@ -580,7 +583,7 @@ export default function Home() {
     Subscribe
   </button>
   </form>
-  <p className="mt-4 text-sm leading-6 text-zinc-500 text-center">
+  <p className="mt-4 text-sm leading-6 text-zinc-400 text-center">
   By subscribing, you agree to receive occasional updates, release
   announcements, and recovered transmissions from Hollow Ridge Press.
   Your information will never be sold or shared, and you may unsubscribe
@@ -638,14 +641,14 @@ export default function Home() {
           Written by J. Anthoney
         </p>
 
-        <p className="mt-2 leading-7 text-zinc-500">
+        <p className="mt-2 leading-7 text-zinc-400">
           Tales from the mountains of Southwestern Virginia, Eastern Tennessee,
           and Western North Carolina.
         </p>
       </div>
     </div>
 
-    <div className="mt-12 border-t border-zinc-800 pt-6 text-sm text-zinc-500">
+    <div className="mt-12 border-t border-zinc-800 pt-6 text-sm text-zinc-400">
       © 2026 Hollow Ridge Press. All Rights Reserved.
     </div>
   </div>
