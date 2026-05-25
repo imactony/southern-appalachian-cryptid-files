@@ -27,8 +27,17 @@ export default function Home() {
           </nav>
         </div>
       </header>
-      <section className="mx-auto max-w-7xl px-6 py-20">
+            <section
+        className="relative overflow-hidden border-b border-zinc-800"
+        style={{
+          backgroundImage: "url('/images/AppMtnsTower1.png')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-black/60 backdrop-blur-[1px]" />
         <motion.div
+          className="relative z-10 mx-auto max-w-7xl px-6 py-40"
           initial={{ opacity: 0, y: 16 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -106,7 +115,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-6 md:grid-cols-4">
             <div className="rounded-3xl border border-zinc-800 bg-zinc-900/60 p-6">
               <p className="font-mono text-xs uppercase tracking-[0.25em] text-emerald-300">
                 SACF-014
@@ -343,7 +352,7 @@ export default function Home() {
                 key={book.title}
                 className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/60"
               >
-                <div className="relative aspect-[2/3]">
+                <div className="relative mx-auto aspect-[2/3] w-44">
                   <Image
                     src={book.image}
                     alt={book.title}
