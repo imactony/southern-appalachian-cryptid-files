@@ -101,21 +101,6 @@ export default function Home() {
 </div>
         </motion.div>
 
-        <div className="mt-16 rounded-3xl border border-zinc-800 bg-zinc-900/70 p-8">
-          <div className="mb-4 flex items-center gap-3 text-emerald-300">
-            <Shield className="h-6 w-6" />
-            <p className="font-mono text-sm uppercase tracking-[0.25em]">
-              Warden Division Notice
-            </p>
-          </div>
-
-          <h3 className="text-3xl font-black">Archive access limited</h3>
-
-          <p className="mt-4 max-w-3xl leading-8 text-zinc-300">
-            If a transmission instructs you to leave the marked trail, do not
-            respond.
-          </p>
-        </div>
       </section>        <section id="archives" className="mt-20">
           <div className="mb-8">
             <p className="text-sm uppercase tracking-[0.3em] text-emerald-300 text-center">
