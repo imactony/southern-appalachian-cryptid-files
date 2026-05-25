@@ -641,6 +641,12 @@ You may unsubscribe at any time.
           <a href="#contact" className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300">
             Contact
           </a>
+
+          <a href="/privacy"
+  className="hover:text-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-300"
+>
+  Privacy Policy
+</a>
         </div>
       </div>
 
@@ -661,8 +667,8 @@ You may unsubscribe at any time.
     </div>
 
     <div className="mt-12 border-t border-zinc-800 pt-6 text-sm text-zinc-400">
-      © 2026 Hollow Ridge Press. All Rights Reserved.
-    </div>
+      © 2026 Hollow Ridge Press. The Southern Appalachian Cryptid Files and all associated content are protected under U.S. copyright law.
+    </div>p
   </div>
 </footer>
     </main>
