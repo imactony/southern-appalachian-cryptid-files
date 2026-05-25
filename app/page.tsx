@@ -39,7 +39,7 @@ export default function Home() {
         </div>
       </header>
             <section
-        className="relative overflow-hidden border-b border-zinc-800 py-24"
+        className="relative overflow-hidden border-b border-zinc-800 py-16"
         style={{
           backgroundImage: "url('/images/AppMtnsTower1.png')",
           backgroundSize: "cover",
@@ -321,7 +321,7 @@ export default function Home() {
             </div>
           </div>
         </section>        
-        <section id="books" className="relative mt-24 py-24 text-center">
+        <section id="books" className="relative mt-16 py-16 text-center">
           <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent opacity-60" />
           <div className="mb-8">
             <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
@@ -421,7 +421,7 @@ export default function Home() {
   </div>
 ))}
 <section id="world"
-  className="relative mt-24 overflow-hidden rounded-[2rem] border border-zinc-800 bg-zinc-950 py-24 text-center"
+  className="relative mt-16 overflow-hidden rounded-[2rem] border border-zinc-800 bg-zinc-950 py-16 text-center"
 >
   <div
     className="absolute inset-0 opacity-20"
@@ -432,7 +432,7 @@ export default function Home() {
     }}
   />
 
-  <div className="relative z-10 mx-auto max-w-5xl px-6 py-24">
+  <div className="relative z-10 mx-auto max-w-5xl px-6 py-16">
     <p className="text-sm uppercase tracking-[0.35em] text-emerald-300">
       The World of the Files
     </p>
@@ -462,7 +462,7 @@ export default function Home() {
     </div>
   </div>
 </section>
-<section id="archive" className="mt-24 py-24 text-center">
+<section id="archive" className="mt-16 py-16 text-center">
   <div className="mb-8">
     <p className="text-sm uppercase tracking-[0.35em] text-emerald-300 text-center">
       Restricted Archive
@@ -545,7 +545,7 @@ export default function Home() {
           </div>
         </section>      
         <section id="contact"
-        className="mt-20 border-t border-zinc-800 py-24 text-center"
+        className="mt-20 border-t border-zinc-800 py-16 text-center"
       >
         <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
           Contact the Archive
@@ -581,7 +581,7 @@ export default function Home() {
   </button>
 </form>
       </section>
-    <footer className="mt-24 border-t border-zinc-800 bg-black/40">
+    <footer className="mt-16 border-t border-zinc-800 bg-black/40">
   <div className="mx-auto max-w-7xl px-6 py-12">
     <div className="grid gap-10 md:grid-cols-3">
       <div>
