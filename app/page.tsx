@@ -52,16 +52,16 @@ export default function Home() {
               <Mountain className="h-6 w-6 text-emerald-300" />
             </div>
             <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
+              <p className="text-base uppercase tracking-[0.3em] text-emerald-300">
                 Hollow Ridge Press
               </p>
-              <h1 className="text-2xl font-bold">
+              <h1 className="text-5xl font-bold">
                 Southern Appalachian Cryptid Files
               </h1>
             </div>
           </div>
 
-          <h2 className="max-w-4xl text-5xl font-black tracking-tight md:text-7xl">
+          <h2 className="max-w-3xl text-2xl font-black tracking-tight md:text-3xl">
             Some stories were never meant to leave the mountains.
           </h2>
 
