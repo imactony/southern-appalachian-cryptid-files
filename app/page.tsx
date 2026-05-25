@@ -85,14 +85,20 @@ export default function Home() {
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <button className="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-6 py-4 font-semibold text-zinc-950 hover:bg-emerald-400">
-              Explore the Archive <ChevronRight className="ml-2 h-4 w-4" />
-            </button>
+  <a
+    href="#archive"
+    className="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-6 py-4 font-semibold text-zinc-950 hover:bg-emerald-400"
+  >
+    Explore the Archive <ChevronRight className="ml-2 h-4 w-4" />
+  </a>
 
-            <button className="inline-flex items-center justify-center rounded-2xl border border-zinc-700 bg-zinc-900 px-6 py-4 font-semibold text-zinc-100 hover:bg-zinc-800">
-              View the Books
-            </button>
-          </div>
+  <a
+    href="#books"
+    className="inline-flex items-center justify-center rounded-2xl border border-zinc-700 bg-zinc-900 px-6 py-4 font-semibold text-zinc-100 hover:bg-zinc-800"
+  >
+    View the Books
+  </a>
+</div>
         </motion.div>
 
         <div className="mt-16 rounded-3xl border border-zinc-800 bg-zinc-900/70 p-8">
