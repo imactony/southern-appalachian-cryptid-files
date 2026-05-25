@@ -221,7 +221,7 @@ export default function Home() {
                   Recovered Personnel Notes
                 </p>
 
-                <h3 className="mt-4 text-4xl font-black">
+                <h3 className="mt-4 text-3xl font-black">
                   Southern Appalachian Field Archivist
                 </h3>
 
