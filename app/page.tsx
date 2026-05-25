@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { Mountain, Radio, Shield, ChevronRight } from "lucide-react";
 
 export default function Home() {
@@ -320,30 +321,50 @@ export default function Home() {
           </div>
 
           <div className="grid gap-6 md:grid-cols-2">
-            {[
-              "Warden Division Case Reports — Volume I",
-              "Shadows Over the Blue Ridge",
-              "The Bridgewalker Files",
-              "Ascension of Apex Theta",
-            ].map((title, index) => (
+                        {[
+              {
+                title: "Warden Division Case Reports — Volume I",
+                image: "/covers/book-0.jpg",
+              },
+              {
+                title: "Shadows Over the Blue Ridge",
+                image: "/covers/book-1.jpg",
+              },
+              {
+                title: "The Bridgewalker Files",
+                image: "/covers/book-2.jpg",
+              },
+              {
+                title: "Ascension of Apex Theta",
+                image: "/covers/book-3.jpg",
+              },
+            ].map((book, index) => (
               <div
-                key={title}
-                className="rounded-3xl border border-zinc-800 bg-zinc-900/60 p-6"
+                key={book.title}
+                className="overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/60"
               >
-                <p className="font-mono text-xs uppercase tracking-[0.25em] text-emerald-300">
-                  Book {index}
-                </p>
+                <div className="relative aspect-[2/3]">
+                  <Image
+                    src={book.image}
+                    alt={book.title}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
 
-                <h3 className="mt-3 text-2xl font-black">{title}</h3>
+                <div className="p-6">
+                  <p className="font-mono text-xs uppercase tracking-[0.25em] text-emerald-300">
+                    Book {index}
+                  </p>
 
-                <p className="mt-4 leading-7 text-zinc-300">
-                  A classified entry in the expanding Southern Appalachian
-                  Cryptid Files mythology.
-                </p>
+                  <h3 className="mt-3 text-2xl font-black">
+                    {book.title}
+                  </h3>
 
-                <button className="mt-6 rounded-2xl border border-zinc-700 px-5 py-3 font-semibold hover:bg-zinc-800">
-                  Learn More
-                </button>
+                  <button className="mt-6 rounded-2xl border border-zinc-700 px-5 py-3 font-semibold hover:bg-zinc-800">
+                    Learn More
+                  </button>
+                </div>
               </div>
             ))}
           </div>
