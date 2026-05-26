@@ -87,11 +87,6 @@ transition={{ duration: shouldReduceMotion ? 0 : 0.7 }}
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-  <a
-    href="#archive"
-className="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-6 py-4 font-semibold text-zinc-950 hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300"  >
-    Explore the Archive <ChevronRight aria-hidden="true" className="ml-2 h-4 w-4" />
-  </a>
 
   <a
     href="#books"
@@ -99,6 +94,12 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
     Find the Books
   </a>
 
+  <a
+    href="#archive"
+className="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-6 py-4 font-semibold text-zinc-950 hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300"  >
+    Explore the Archive <ChevronRight aria-hidden="true" className="ml-2 h-4 w-4" />
+  </a>
+  
   <a
   href="#contact"
   className="inline-flex items-center justify-center rounded-2xl border border-emerald-700 bg-emerald-950/40 px-6 py-4 font-semibold text-emerald-200 hover:bg-emerald-900/40 focus:outline-none focus:ring-2 focus:ring-emerald-300"
