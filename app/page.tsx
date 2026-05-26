@@ -99,7 +99,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
 className="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px-6 py-4 font-semibold text-zinc-950 hover:bg-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-300"  >
     Explore the Archive <ChevronRight aria-hidden="true" className="ml-2 h-4 w-4" />
   </a>
-  
+
   <a
   href="#contact"
   className="inline-flex items-center justify-center rounded-2xl border border-emerald-700 bg-emerald-950/40 px-6 py-4 font-semibold text-emerald-200 hover:bg-emerald-900/40 focus:outline-none focus:ring-2 focus:ring-emerald-300"
@@ -205,7 +205,7 @@ className="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px
   aria-label={`Read ${book.title} on Amazon`}
   className="mt-6 inline-block rounded-2xl border border-zinc-700 px-5 py-3 font-semibold transition hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-emerald-300"
 >
-  Read on Amazon
+  Find on Amazon
 </a>
     </div>
   </div>
