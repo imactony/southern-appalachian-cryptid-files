@@ -101,7 +101,110 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
 </div>
         </motion.div>
 
-      </section>        <section id="case-files" className="mt-20">
+      </section>
+      <section id="books" className="relative mt-16 py-16 text-center">
+          <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent opacity-60" />
+          <div className="mb-8">
+            <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
+              Reading Order
+            </p>
+
+            <h2 className="mt-2 text-4xl font-black">
+              The Southern Appalachian Cryptid Files
+            </h2>
+
+            <p className="mx-auto mt-4 max-w-3xl leading-8 text-zinc-300 text-center">
+              Begin with the Warden Division archive, then follow the full novel
+              sequence as the investigation expands from isolated sightings to a
+              larger Appalachian mythology.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+                        {[
+              {
+  title: "Warden Division Case Reports — Volume I",
+  label: "Book 0 / Archive Anthology",
+  metadata: "Recommended Starting Point • Classified Case Reports",
+  image: "/covers/book-0.jpg",
+  link: "https://www.amazon.com/dp/B0GLJDMPML",
+  description:
+    "A classified collection of Warden Division case reports documenting the strange, dangerous, and unexplained things moving through Southern Appalachia.",
+},
+{
+  title: "Shadows Over the Blue Ridge",
+  label: "Book One",
+  metadata: "Book One • Main Investigation Begins",
+  image: "/covers/book-1.jpg",
+  link: "https://www.amazon.com/dp/B0GL8TGWRP",
+  description:
+    "When old mountain stories begin turning into real disappearances, the hidden files of the Warden Division reveal something watching from the fog.",
+},
+{
+  title: "The Bridgewalker Files",
+  label: "Book Two",
+  metadata: "Book Two • Thresholds and Crossings",
+  image: "/covers/book-2.jpg",
+  link: "https://www.amazon.com/dp/B0GLGX6G64",
+  description:
+    "Bridges, crossings, and forgotten roads become thresholds as the investigation moves deeper into the haunted geography of Appalachia.",
+},
+{
+  title: "Ascension of Apex Theta",
+  label: "Book Three",
+  metadata: "Book Three • Emergence Event",
+  image: "/covers/book-3.jpg",
+  link: "https://www.amazon.com/dp/B0GN8F3JWT",
+  description:
+    "The archive begins to unravel as separate cases converge toward an emergence event buried in the mountains and hidden in sealed records.",
+},
+            ].map((book, index) => (
+  <div
+    key={book.title}
+      className="group overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/60 transition duration-300 hover:-translate-y-1 hover:border-emerald-800/60 hover:bg-zinc-900"
+
+  >
+    <div className="relative mx-auto aspect-[2/3] w-44">
+      <Image
+        src={book.image}
+        alt={`${book.title} book cover`}
+        fill
+        className="object-cover transition duration-500 group-hover:scale-105"
+      />
+    </div>
+
+    <div className="p-6">
+      <p className="font-mono text-xs uppercase tracking-[0.25em] text-emerald-300">
+        {book.label}
+      </p>
+
+      <h3 className="mt-3 text-2xl font-black">
+        {book.title}
+      </h3>
+
+<p className="mt-2 text-sm font-semibold text-zinc-400">
+  {book.metadata}
+</p>
+
+      <p className="mt-4 min-h-[7rem] leading-7 text-zinc-300">
+        {book.description}
+      </p>
+
+<a
+  href={book.link}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={`Read ${book.title} on Amazon`}
+  className="mt-6 inline-block rounded-2xl border border-zinc-700 px-5 py-3 font-semibold transition hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-emerald-300"
+>
+  Read on Amazon
+</a>
+    </div>
+  </div>
+))}
+          </div>
+        </section>
+                <section id="case-files" className="mt-20">
           <div className="mb-8">
             <p className="text-sm uppercase tracking-[0.3em] text-emerald-300 text-center">
               Case File Archive
@@ -323,109 +426,7 @@ className="inline-flex items-center justify-center rounded-2xl border border-zin
             </div>
           </div>
         </section>        
-        <section id="books" className="relative mt-16 py-16 text-center">
-          <div className="pointer-events-none absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-black to-transparent opacity-60" />
-          <div className="mb-8">
-            <p className="text-sm uppercase tracking-[0.3em] text-emerald-300">
-              Reading Order
-            </p>
-
-            <h2 className="mt-2 text-4xl font-black">
-              The Southern Appalachian Cryptid Files
-            </h2>
-
-            <p className="mx-auto mt-4 max-w-3xl leading-8 text-zinc-300 text-center">
-              Begin with the Warden Division archive, then follow the full novel
-              sequence as the investigation expands from isolated sightings to a
-              larger Appalachian mythology.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-2">
-                        {[
-              {
-  title: "Warden Division Case Reports — Volume I",
-  label: "Book 0 / Archive Anthology",
-  metadata: "Recommended Starting Point • Classified Case Reports",
-  image: "/covers/book-0.jpg",
-  link: "https://www.amazon.com/dp/B0GLJDMPML",
-  description:
-    "A classified collection of Warden Division case reports documenting the strange, dangerous, and unexplained things moving through Southern Appalachia.",
-},
-{
-  title: "Shadows Over the Blue Ridge",
-  label: "Book One",
-  metadata: "Book One • Main Investigation Begins",
-  image: "/covers/book-1.jpg",
-  link: "https://www.amazon.com/dp/B0GL8TGWRP",
-  description:
-    "When old mountain stories begin turning into real disappearances, the hidden files of the Warden Division reveal something watching from the fog.",
-},
-{
-  title: "The Bridgewalker Files",
-  label: "Book Two",
-  metadata: "Book Two • Thresholds and Crossings",
-  image: "/covers/book-2.jpg",
-  link: "https://www.amazon.com/dp/B0GLGX6G64",
-  description:
-    "Bridges, crossings, and forgotten roads become thresholds as the investigation moves deeper into the haunted geography of Appalachia.",
-},
-{
-  title: "Ascension of Apex Theta",
-  label: "Book Three",
-  metadata: "Book Three • Emergence Event",
-  image: "/covers/book-3.jpg",
-  link: "https://www.amazon.com/dp/B0GN8F3JWT",
-  description:
-    "The archive begins to unravel as separate cases converge toward an emergence event buried in the mountains and hidden in sealed records.",
-},
-            ].map((book, index) => (
-  <div
-    key={book.title}
-      className="group overflow-hidden rounded-3xl border border-zinc-800 bg-zinc-900/60 transition duration-300 hover:-translate-y-1 hover:border-emerald-800/60 hover:bg-zinc-900"
-
-  >
-    <div className="relative mx-auto aspect-[2/3] w-44">
-      <Image
-        src={book.image}
-        alt={`${book.title} book cover`}
-        fill
-        className="object-cover transition duration-500 group-hover:scale-105"
-      />
-    </div>
-
-    <div className="p-6">
-      <p className="font-mono text-xs uppercase tracking-[0.25em] text-emerald-300">
-        {book.label}
-      </p>
-
-      <h3 className="mt-3 text-2xl font-black">
-        {book.title}
-      </h3>
-
-<p className="mt-2 text-sm font-semibold text-zinc-400">
-  {book.metadata}
-</p>
-
-      <p className="mt-4 min-h-[7rem] leading-7 text-zinc-300">
-        {book.description}
-      </p>
-
-<a
-  href={book.link}
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label={`Read ${book.title} on Amazon`}
-  className="mt-6 inline-block rounded-2xl border border-zinc-700 px-5 py-3 font-semibold transition hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-emerald-300"
->
-  Read on Amazon
-</a>
-    </div>
-  </div>
-))}
-          </div>
-        </section>
-
+        
 <section id="world"
   className="relative mt-16 overflow-hidden rounded-[2rem] border border-zinc-800 bg-zinc-950 py-16 text-center"
 >
