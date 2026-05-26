@@ -96,7 +96,7 @@ className="inline-flex items-center justify-center rounded-2xl bg-emerald-500 px
   <a
     href="#books"
 className="inline-flex items-center justify-center rounded-2xl border border-zinc-700 bg-zinc-900 px-6 py-4 font-semibold text-zinc-100 hover:bg-zinc-800 focus:outline-none focus:ring-2 focus:ring-emerald-300"  >
-    View the Books
+    Find the Books
   </a>
 </div>
         </motion.div>
